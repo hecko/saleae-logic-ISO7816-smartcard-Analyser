@@ -136,11 +136,11 @@ void iso7816AnalyzerResults::GenerateExportFile( const char* file, DisplayBase d
 void iso7816AnalyzerResults::GenerateFrameTabularText( U64 frame_index, DisplayBase display_base )
 {
 	Frame frame = GetFrame( frame_index );
-	ClearResultStrings();
+	ClearTabularText();
 
 	char number_str[128];
 	AnalyzerHelpers::GetNumberString( frame.mData1, display_base, 8, number_str, 128 );
-	AddResultString( number_str );
+	AddTabularText( number_str );
 }
 
 void iso7816AnalyzerResults::GeneratePacketTabularText( U64 packet_id, DisplayBase display_base )
