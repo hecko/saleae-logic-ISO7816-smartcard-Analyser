@@ -1,12 +1,14 @@
-This build assumes the SDK to be located in this directory and to be called
+This build assumes the SDK to be located on the same level as this checked out directory and be called
 
-	SaleaeAnalyzerSdk-1.1.23	
+	AnalyzerSDK
 
-Unzipping the SaleaeAnalyzerSdk-1.1.23.zip distribution in this directory
-should do the trick. I norder to compile Windows version unzip the SDK into
+You can checkout the AnalyzerSDK from https://github.com/saleae/AnalyzerSDK
+Tested with master branch with latest commit on May 12, 2017
+
+I norder to compile Windows version move the SDK files into
 the following directories:
 - ../sdk/include - for headers (*.hpp)
-- ../sdk/lib     - for libraris
+- ../sdk/lib     - for libraries
 
 Files and Directories:
 
@@ -15,7 +17,7 @@ source
 
 ISO7816Analyser
 	XCode build environment for above source.
-	
+
 VCProj
 	VC2015 build environment for above source.
 
@@ -24,8 +26,3 @@ Licenses.txt
 
 README.txt
 	This file
-
-SaleaeAnalyzerSdk-1.1.25
-	Not distrubuted; but expected name and location of the SDK. The makefile
-	and X-Code build files have hardcoded paths to the include.
-	Please download it from: http://support.saleae.com/hc/en-us/categories/200077184-sdks-automation-betas
