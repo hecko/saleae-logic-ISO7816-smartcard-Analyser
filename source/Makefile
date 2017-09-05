@@ -1,11 +1,11 @@
-SDK=../SaleaeAnalyzerSdk-1.1.9
+SDK=../../AnalyzerSDK
 DYLIB=libISO7816Analyzer.dylib
 
-SRCS=iso7816Analyzer.cpp iso7816AnalyzerResults.cpp iso7816AnalyzerSettings.cpp iso7816SimulationDataGenerator.cpp
+SRCS=ISO7816Pps.cpp SaleaeHelper.cpp Convert.cpp Logging.cpp iso7816Analyzer.cpp iso7816AnalyzerResults.cpp iso7816AnalyzerSettings.cpp iso7816SimulationDataGenerator.cpp
 GDB=-g -ggdb
 
-CFLAGS=-I"$(SDK)/include" -I. -O3 -w -c -fpic -Wall $(GDB) -m32
-LDFLAGS=-L/Applications/Logic.app/Contents/MacOS  -lAnalyzer -dynamiclib  $(GDB) -m32
+CFLAGS=-I"$(SDK)/include" -I. -O3 -w -c -fpic -Wall $(GDB)
+LDFLAGS=-L/Applications/Logic.app/Contents/MacOS  -lAnalyzer -dynamiclib  $(GDB)
 OBJECTS=$(SRCS:.cpp=.o)
 CC=g++
 

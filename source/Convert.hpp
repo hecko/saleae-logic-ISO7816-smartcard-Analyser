@@ -23,6 +23,7 @@ public:
 	static std::string ToDec(unsigned long long val);
 	static std::string ToDec(unsigned int val);
 	static std::string ToDec(int val);
+	static std::string ToDec(size_t val);
 
 private:
 	Convert();

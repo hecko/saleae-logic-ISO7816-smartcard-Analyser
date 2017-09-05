@@ -61,3 +61,9 @@ std::string Convert::ToDec(int val)
 	return tmp.str();
 }
 
+std::string Convert::ToDec(size_t val)
+{
+	std::ostringstream tmp;
+	tmp << val;
+	return tmp.str();
+}
