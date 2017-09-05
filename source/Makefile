@@ -19,3 +19,6 @@ clean:
 
 $(DYLIB): $(OBJECTS)
 	$(CC) $(LDFLAGS) -o $(DYLIB) $(OBJECTS)
+
+install:
+	cp libISO7816Analyzer.dylib /Applications/Logic.app/Contents/Resources/Analyzers/
